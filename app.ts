@@ -9,6 +9,7 @@ import cors from 'cors';
 import { router as createPaymentRouter } from "./app/contollers/createPayment";
 import { router as updatePaymentSolStatusRouter } from "./app/contollers/updatePaymentSolStatus";
 import { router as mintNftRouter } from "./app/contollers/mintNft";
+import { router as sendTokenRouter } from "./app/contollers/sendToken";
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/create_payment", createPaymentRouter);
 app.use("/update_payment_sol_status", updatePaymentSolStatusRouter);
 app.use("/mint_nft", mintNftRouter);
+app.use("/send_token", sendTokenRouter);
 
 // -------------------------------------------
 //  Server Config

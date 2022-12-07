@@ -290,6 +290,101 @@
 					"body": "{\n    \"token_address\": \"33Hb2smyysLhu7zzrANthXeS7LSQfG4t8TdpffLtWE1D\"\n}"
 				}
 			]
+		},
+		{
+			"name": "send_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"recipient\": \"55AfqEL3TC9mpkDZ63UCgDrzPcMQd5aZtDegfQCWQ5tK\",\n    \"amount\": \"1\",\n    \"token_address\": \"Eu8zfdtk91WR7hFF2BdLoZSc6hqSaxBwfiXu9zbDyNof\",\n    \"label\": \"\",\n    \"message\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3010/send_token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3010",
+					"path": [
+						"send_token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "send_token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"recipient\": \"55AfqEL3TC9mpkDZ63UCgDrzPcMQd5aZtDegfQCWQ5tK\",\n    \"amount\": \"1\",\n    \"token_address\": \"Eu8zfdtk91WR7hFF2BdLoZSc6hqSaxBwfiXu9zbDyNof\",\n    \"label\": \"\",\n    \"message\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3010/send_token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3010",
+							"path": [
+								"send_token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "301"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12d-Vh8hZI9KdJfL69bHWKUk6x3dTiw\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 14:39:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"payment_link\": \"solana:55AfqEL3TC9mpkDZ63UCgDrzPcMQd5aZtDegfQCWQ5tK?amount=1&spl-token=Eu8zfdtk91WR7hFF2BdLoZSc6hqSaxBwfiXu9zbDyNof&reference=5ozqzmPLCParBTG6By4t5JQ6TG4ctVMpTBMKjBu49s4A\",\n    \"signature\": \"4VwtQ36vfW92q4CCs1vxBheCZfVeGmqurAVYsewZgYLfDL2Q7cku4hRLEihzK2m7UexGGc5xntqcs29rQ3CnVtkE\"\n}"
+				}
+			]
 		}
 	]
 }
