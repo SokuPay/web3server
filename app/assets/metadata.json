@@ -1,0 +1,15 @@
+{
+	"name": "My Name",
+	"symbol": "M",
+	"description": "My Description",
+	"seller_fee_basis_points": 1000,
+	"image": "http://placekitten.com/200/300",
+	"external_url": "https://example.com/",
+	"collection": null,
+	"attributes": [
+		{
+			"trait_type": "My trait_type",
+			"value": "My value"
+		}
+	]
+}
