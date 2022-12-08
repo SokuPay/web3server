@@ -6,8 +6,7 @@ import cookieParser from "cookie-parser";
 import logger, { token } from "morgan";
 import cors from 'cors';
 
-import { router as createPaymentRouter } from "./app/contollers/createPayment";
-import { router as updatePaymentSolStatusRouter } from "./app/contollers/updatePaymentSolStatus";
+import { router as mainRouter } from "./app/contollers/main";
 import { router as mintNftRouter } from "./app/contollers/mintNft";
 import { router as sendTokenRouter } from "./app/contollers/sendToken";
 
@@ -29,8 +28,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // -------------------------------------------
 //  Routing
 // -------------------------------------------
-app.use("/create_payment", createPaymentRouter);
-app.use("/update_payment_sol_status", updatePaymentSolStatusRouter);
+app.use("/main", mainRouter);
 app.use("/mint_nft", mintNftRouter);
 app.use("/send_token", sendTokenRouter);
 

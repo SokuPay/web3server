@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "create_pyment",
+			"name": "main",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -21,20 +21,20 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3010/create_payment",
+					"raw": "http://localhost:3010/main",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3010",
 					"path": [
-						"create_payment"
+						"main"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "create_pyment",
+					"name": "main",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -48,14 +48,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3010/create_payment",
+							"raw": "http://localhost:3010/main",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "3010",
 							"path": [
-								"create_payment"
+								"main"
 							]
 						}
 					},
@@ -81,11 +81,11 @@
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"bd-1Jj4KUEXsEgRwoTLWk9yQDWQJmY\""
+							"value": "W/\"bd-BmM67Pa0kOqwaLzUucP71sfrFnA\""
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 07 Dec 2022 11:40:47 GMT"
+							"value": "Thu, 08 Dec 2022 14:21:16 GMT"
 						},
 						{
 							"key": "Connection",
@@ -97,102 +97,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"payment_link\": \"solana:HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg?amount=0.001&reference=8ZtfEU11AfP7LUQ7mCYu3CjKWeT2A9dHZBeC56sQyiKd&label=Buy&message=Thank+you+for+buying+NFT%21\"\n}"
-				}
-			]
-		},
-		{
-			"name": "update_payment_sol_status",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"reference\": \"8ZtfEU11AfP7LUQ7mCYu3CjKWeT2A9dHZBeC56sQyiKd\",\n    \"recipient\": \"HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg\",\n    \"amount\": \"0.001\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3010/update_payment_sol_status",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3010",
-					"path": [
-						"update_payment_sol_status"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "update_payment_sol_status",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"reference\": \"8ZtfEU11AfP7LUQ7mCYu3CjKWeT2A9dHZBeC56sQyiKd\",\n    \"recipient\": \"HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg\",\n    \"amount\": \"0.001\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3010/update_payment_sol_status",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3010",
-							"path": [
-								"update_payment_sol_status"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "142"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"8e-BByG992PBNuM6pEkC6AMm1U+9OA\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 07 Dec 2022 11:54:07 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"signature\": \"33Byaa5e2ZeAW623PhhMTdA5DGESqWSLazziHJWvHhYHBUTUrK5cJ5nf8ubXrbKdaPH7YLQeq4AUZ6shHuUS5GkX\",\n    \"payment_status\": \"validated\"\n}"
+					"body": "{\n    \"payment_link\": \"solana:HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg?amount=0.001&reference=HYx8byhQvHGhu88MMxiW6fB6jqZYgKZxngWuHGthG6Re&label=Buy&message=Thank+you+for+buying+NFT%21\"\n}"
 				}
 			]
 		},
