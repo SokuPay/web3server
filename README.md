@@ -1,12 +1,24 @@
+## Setup
+### Editor
+Rewrite [QuickNode RPC URL](https://www.quicknode.com/) for Devnet to `DOT_RPC_SOLANA` in .env.dev file.  
+e.g.  
+```
+DOT_RPC_SOLANA=https://twilight-methodical-gas.solana-devnet.discover.quiknode.pro/<KEY>/
+```
+
+### Terminal
+```
+% npm i
+```
+
 ## Run
 ### 1. Terminal
 ```
-% npm i
 % npm run dev
 ```
 
 ### 2. Browser
-1. Run [main](https://sokupay.postman.co/workspace/9198efd6-310b-4236-8370-38d11eb675f0/collection/24765757-db79a27e-adf1-462d-9efc-88f6444dc18b?action=share&creator=24765757) at Postman
+1. Run [main request](https://sokupay.postman.co/workspace/9198efd6-310b-4236-8370-38d11eb675f0/collection/24765757-db79a27e-adf1-462d-9efc-88f6444dc18b?action=share&creator=24765757) at Postman
 
 2. get Payment Link from terminal log: e.g.  
 ```
