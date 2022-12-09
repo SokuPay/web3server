@@ -41,7 +41,7 @@ router.post("/", async (req, res, next) => {
     //  Payment Variables
     // ------------------------------------------------------
     const recipient: PublicKey = merchantKeypair.publicKey;
-    const amount: BigNumber = new BigNumber(req.body.amount);
+    const amount: BigNumber = new BigNumber(0.001); // TODO: replace to req.body.amount
     const reference: PublicKey = new Keypair().publicKey;
     const label: string = 'Buy';
     const message: string = 'Thank you for buying NFT!';
