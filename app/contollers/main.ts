@@ -65,6 +65,11 @@ router.post("/", async (req, res, next) => {
     res.render(
       'main',
       {
+        recipient: recipient,
+        amount: amount,
+        reference: reference,
+        label: label,
+        message: message,
         payment_link: paymentLink,
       }
     );

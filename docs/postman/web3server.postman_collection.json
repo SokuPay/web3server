@@ -77,15 +77,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "189"
+							"value": "396"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"bd-BmM67Pa0kOqwaLzUucP71sfrFnA\""
+							"value": "W/\"18c-TUu6hV0Mo4KJVh47KUBPDorMycc\""
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 08 Dec 2022 14:21:16 GMT"
+							"value": "Fri, 09 Dec 2022 03:37:50 GMT"
 						},
 						{
 							"key": "Connection",
@@ -97,7 +97,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"payment_link\": \"solana:HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg?amount=0.001&reference=HYx8byhQvHGhu88MMxiW6fB6jqZYgKZxngWuHGthG6Re&label=Buy&message=Thank+you+for+buying+NFT%21\"\n}"
+					"body": "{\n    \"recipient\": \"HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg\",\n    \"amount\": \"0.001\",\n    \"reference\": \"AK8nDRu7a5n8sfsCJ3EviELrFtT1i4WHEE7MFwetHEtS\",\n    \"label\": \"Buy\",\n    \"message\": \"Thank you for buying NFT!\",\n    \"payment_link\": \"solana:HXtBm8XZbxaTt41uqaKhwUAa6Z1aPyvJdsZVENiWsetg?amount=0.001&reference=AK8nDRu7a5n8sfsCJ3EviELrFtT1i4WHEE7MFwetHEtS&label=Buy&message=Thank+you+for+buying+NFT%21\"\n}"
 				}
 			]
 		},
