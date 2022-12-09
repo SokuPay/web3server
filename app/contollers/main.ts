@@ -148,7 +148,7 @@ router.post("/", async (req, res, next) => {
       const mintNftUrl = 'http://localhost:3010/mint_nft';
 
       const mintNftResponse = await axios.post(mintNftUrl, {
-        'name': 'Dummy NFT',
+        'name': 'Kawaii Maid',
       });
 
       const tokenAddress = mintNftResponse.data.token_address;

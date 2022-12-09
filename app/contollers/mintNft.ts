@@ -36,7 +36,7 @@ router.post("/", async(req, res, next) => {
     const { nft } = await metaplex
       .nfts()
       .create({
-        uri: 'https://arweave.net/flsMEEsaVxZJefZRWUQlK7AqciUmveT6T4LgK-WP3-0', // TODO: replace uri
+        uri: 'https://arweave.net/wL_hX2I5C-7ekIpH8TQuHSDfd8-zERY0e8sNBaSLltI', // TODO: replace uri
         name: name,
         sellerFeeBasisPoints: 500, // Represents 5.00%.
         maxSupply: toBigNumber(1),
