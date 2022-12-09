@@ -5,7 +5,10 @@ import axios from 'axios';
 import BigNumber from 'bignumber.js';
 
 // --- Solana Common ---
-import { Keypair, PublicKey } from '@solana/web3.js';
+import {
+  Keypair,
+  PublicKey,
+} from '@solana/web3.js';
 import { getSolanaConnection } from '../modules/connections/solana';
 
 // --- Solana Pay ---
@@ -157,9 +160,16 @@ router.post("/", async (req, res, next) => {
       console.log('--- Send NFT ---');
 
       const sendTokenUrl = 'http://localhost:3010/send_token';
+      
+      const getTx = await connection.getTransaction(
+        signature,
+        { commitment: "confirmed" }
+      );
+      // accountKeys[1] is destination in Solana Pay transfer program
+      const recipientToken = getTx?.transaction.message?.accountKeys[1];
 
       const sendTokenResponse = await axios.post(sendTokenUrl, {
-        'recipient': '55AfqEL3TC9mpkDZ63UCgDrzPcMQd5aZtDegfQCWQ5tK', // TODO: replace to request
+        'recipient': recipientToken,
         'amount': '1',
         'token_address': tokenAddress,
         'label': '',
