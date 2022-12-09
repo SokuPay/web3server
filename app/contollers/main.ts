@@ -165,8 +165,11 @@ router.post("/", async (req, res, next) => {
         signature,
         { commitment: "confirmed" }
       );
-      // accountKeys[1] is destination in Solana Pay transfer program
-      const recipientToken = getTx?.transaction.message?.accountKeys[1];
+
+      // [Note]
+      // accountKeys[0]: source address(from address)
+      // accountKeys[1]: destination address(to address)
+      const recipientToken = getTx?.transaction.message?.accountKeys[0];
 
       const sendTokenResponse = await axios.post(sendTokenUrl, {
         'recipient': recipientToken,
