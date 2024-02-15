@@ -1,13 +1,14 @@
 ## Setup
-### Editor
+### RPC
 Rewrite [QuickNode RPC URL](https://www.quicknode.com/) for Devnet to `DOT_RPC_SOLANA` in .env.dev file.  
 e.g.  
 ```
 DOT_RPC_SOLANA=https://twilight-methodical-gas.solana-devnet.discover.quiknode.pro/<KEY>/
 ```
 
-### Terminal
+### NPM
 ```
+% mv package.json.example package.json
 % npm i
 ```
 
